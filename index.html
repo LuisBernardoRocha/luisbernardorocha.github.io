@@ -1,1 +1,42 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/kittystyle.css"> 
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/virtualPet.js"></script>
+
+	<title>Virtual Pet</title>
+</head>
+
+<body>
+
+
+	<div class="card-panel">./commandFeline/</div>
+
+	<div class="valign">
+
+		<img src="img/kitty0.png" class="meowmeow" width="350"><br>
+
+		<form>
+			<input class="score" type="text" name="petName" value=""><br>
+			<br>
+			<input class="score" type="text" size="60" name="petStatus" value=""><br>
+		</form>
+
+		<input type="button" class="waves-effect waves-light btn" value="play" onClick="kitty.play();">
+
+		<input type="button"  class="waves-effect waves-light btn" value="feed" class ="feedIt" onClick="kitty.feed();">
+
+		<input type="button"  class="waves-effect waves-light btn" value="medicate" onClick="kitty.medicate();">
+
+		<br>
+
+		<input type="button" class="waves-effect waves-light btn" value="start" onClick="start();">
+
+		<input type="button" class="waves-effect waves-light btn" value="pause" onClick = "clearTimeout(theTimeOut);">
+
+	</div> 
+</body>
+</html>
